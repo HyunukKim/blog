@@ -2,7 +2,6 @@
 layout: post
 title: jekyll+github로 블로그 시작하기
 ---
-
 <html>
 <head>
 	<title>맥에서 jekyll과 github로 블로그 시작하기</title>
@@ -37,5 +36,16 @@ git push origin gh-pages  // 반드시 gh-pages 브랜치로 푸시해야 깃허
 </code></pre></div>
 이제 <code>사용자명.github.io/blog</code>의 주소로 이동하면 자신의 블로그를 볼 수 있다. 참고로 동기화과정이 조금 오래 걸릴 수 있음을 인지하자.
 </p>
+<h1>블로그 포스팅</h1>
+<p>jekyll은 각 블로그 글마다 파일이 따로 구성되어있다. 즉, jekyll이 각각의 파일을 보여주는 것이다. 그러므로 글을 등록하기 위해서는 로컬 디렉토리에 포스팅하고자 할 내용을 파일로 저장하고 <code>_post</code>폴더에 저장해야 한다. jekyll은 <code>_post</code>폴더에 있는 파일만 블로그 포스트로 인식한다.</p>
+<p>블로그 포스트 파일명은 <code>YYYY-MM-DD-post-name.확장자</code> 형식으로 지정되어야 한다. 마크다운으로 작성된 경우 <code>YYYY-MM-DD-포스트이름.md</code>로 저장하면 된다. 또한 블로그 포스트는 항상 파일 앞에 <code>front matter</code>를 적어야 한다. jekyll는 front matter 블록으로 시작되는 파일만 처리한다. 각 front matter에는 "title"과 "layout" 필드는 반드시 들어가야 한다.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">---
+title: [제목]
+layout: post
+---
+
+글 내용
+</code></pre></div>
+<p>이처럼 jekyll과 github 를 이용해서 무료로 기본적인 블로그를 하나 만들어 시작해볼 수 있었다.</p>
 </body>
 </html>
