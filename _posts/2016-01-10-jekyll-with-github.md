@@ -1,6 +1,8 @@
 ---
 layout: post
 title: jekyll+github로 블로그 시작하기
+description: "jekyll을 통해 블로그를 만들고 github page에 호스팅하는 방법을 설명"
+tags: [blog, gitgub, jekyll]
 ---
 <html>
 <head>
@@ -47,5 +49,9 @@ layout: post
 글 내용
 </code></pre></div>
 <p>이처럼 jekyll과 github 를 이용해서 무료로 기본적인 블로그를 하나 만들어 시작해볼 수 있었다.</p>
+<h2>참고</h2>
+<ul>
+	<li><mark><a href="http://svperstarz.github.io/jekyll-docs-ko/">지킬 공식 사이트 한글 번역</a></mark></li>
+</ul>
 </body>
 </html>
